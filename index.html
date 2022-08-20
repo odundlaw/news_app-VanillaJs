@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New App</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/aa3f3f6286.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+
+  <body>
+    <sidebar class="sidenav">
+      <div class="sidebar-header">
+        <div class="logo">
+          <h3>N A</h3>
+        </div>
+      </div>
+      <nav class="sidebar-navigations">
+        <ul>
+          <li>
+            <a href="index.html" class="active">
+              <i class="fa-light fa-house-user"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#">Country News</a>
+          </li>
+          <li><a href="#">Trending News</a></li>
+        </ul>
+      </nav>
+    </sidebar>
+    <header class="header">
+      <div class="nav-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <h3>News API</h3>
+      </div>
+      <nav class="navigation">
+        <a href="index.html" active class="active">Home</a>
+        <a href="#">Country News</a>
+        <a href="#">Trending News</a>
+      </nav>
+    </header>
+    <main>
+      <template id="news-template">
+        <li>
+          <article class="news-body">
+            <img class="news-image" />
+            <div class="img-cover"></div>
+            <div class="news-content">
+              <h2></h2>
+              <span>Read More...</span>
+            </div>
+          </article>
+        </li>
+      </template>
+      <template id="banner-news-template">
+        <li>
+          <article class="banner-news-body">
+            <img class="news-image" />
+            <div class="img-cover"></div>
+            <div class="news-content">
+              <h2></h2>
+              <span>Read More...</span>
+            </div>
+          </article>
+        </li>
+      </template>
+      <section class="banner">
+        <h2>
+          Giving You News from Different Part of the World, Including Sports,
+          Politics, Agriculture, Power, Gender Equality, Etc.
+        </h2>
+        <ul class="banner-news-list"></ul>
+        <div class="marque-area"></div>
+      </section>
+      <section class="news-area">
+        <ul class="news-lists"></ul>
+      </section>
+    </main>
+  </body>
+</html>
